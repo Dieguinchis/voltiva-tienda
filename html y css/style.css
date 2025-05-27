@@ -117,7 +117,7 @@ h2 {
 
 #productos {
   background-color:#ffffff;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
   margin: 3rem;
 }
@@ -207,14 +207,14 @@ h2 {
 
 .reseña-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
   gap: 5rem;
   padding: 3rem;
 }
 
 .reseña-card {
   background-color: #e6e6e6;
-  padding: 1.5rem;
+  padding: 0.5rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -228,8 +228,14 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-.reseña-card h4 {
-  font-size: 1.2rem;
+.reseña-card-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reseña-card-perfil h4 {
+  font-size: 1.5rem;
   color: #b100e8;
   font-weight: bold;
 }
@@ -337,5 +343,12 @@ footer {
 @media screen and (max-width: 2024px) {
   form {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reseña-card-perfil {
+    display: flex;
+    flex-direction: column;
   }
 }
