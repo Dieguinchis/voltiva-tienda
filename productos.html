@@ -5,36 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voltiva</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
 </head>
 <body>
-    <header>
+    <header class="header-pag">
         <nav>
-        <h1 class="logo">Voltiva</h1>
-            <ul class="nav-links">
-                <li><a href="#inicio"> Inicio</a></li>
-                <li><a href="#productos"> Productos</a></li>
-                <li><a href="#reseñas"> Reseñas</a></li>
-                <li><a href="#contacto"> Contacto</a></li>
-            </ul>
+            <div class="nav-bar"> 
+                <div class="nav-logo">
+                    <a href="inicio.html ">Voltiva</a>
+                </div>
+                <div class="nav-links"> 
+                    <ul >
+                        <li><a href="productos.html"> Productos </a></li>
+                        <li><a href="reseñas.html"> Reseñas </a></li>
+                        <li><a href="nosotros.html"> Nosotros </a></li>
+                        <li><a href="faq.html"> Preguntas Frecuentes </a></li>
+                    </ul>
+                </div>
+                <div class="nav-contacto">
+                    <a href="contacto.html"> Contactanos </a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h2> Innovacion a tu alcance </h2>
-                <p>Descubrí lo último en tecnología con Voltiva</p>
-                <a href="#productos"> Ver productos </a>
-            </div>
-
-        </section>
         <section id="productos">
             <h2> Nuestros Productos </h2>
             <div class="producto">
                 <h4> Catalogo</h4>
                 <div class="producto-flex">
                     <div class="producto-card">
-                        <img src="imagenes/audifonos_inalambricos.jpg" alt="Audifonos Inalambricos" width="300rem">
+                        <img src="assets/img/audifonos_inalambricos.jpg" alt="Audifonos Inalambricos" width="300rem">
                         <div class="info">
                             <h5> Audifonos Inalambricos </h5>
                             <p> Audífonos intraurales con cancelación de ruido ambiental y sonido HD Bass. Batería de 30 horas (con estuche de carga). Resistencia IPX5 contra agua y sudor. Micrófono incorporado con reducción de ruido para llamadas claras. Controles táctiles y modo "transparencia" para escuchar tu entorno. </p>
@@ -43,7 +45,7 @@
                     </div>
 
                     <div class="producto-card">
-                        <img src="imagenes/notebook.jpg" alt="Notebook" width="300rem">
+                        <img src="assets/img/notebook.jpg" alt="Notebook" width="300rem">
                         <div class="info">
                             <h5> Notebook </h5>
                             <p> Notebook ultradelgada (solo 1.2 kg y 13.3 mm de grosor) con chasis de aluminio resistente y bisel reducido para máxima portabilidad. Ideal para trabajo, estudio o entretenimiento. </p>
@@ -52,7 +54,7 @@
                     </div>
 
                     <div class="producto-card">
-                        <img src="imagenes/funda_celular.png" alt="Funda para celular" width="300rem">
+                        <img src="assets/img/funda_celular.png" alt="Funda para celular" width="300rem">
                         <div class="info">
                             <h5> Funda transparente para celular </h5>
                             <p> Funda de TPU ultra transparente y anti-yellowing (resistente al amarillamiento) para mostrar el diseño original de tu smartphone. Protección 360° con bordes elevados para resguardar la pantalla y cámara. Material flexible antichoque y textura antideslizante. </p>
@@ -61,7 +63,7 @@
                     </div>
 
                     <div class="producto-card">
-                        <img src="imagenes/cargador_celular.jpg" alt="Cargador para celular" width="300rem">
+                        <img src="assets/img/cargador_celular.jpg" alt="Cargador para celular" width="300rem">
                         <div class="info">
                             <h5> Cargador para celular </h5>
                             <p> Cargador USB-C PD 3.0 con tecnología de carga rápida inteligente. Recarga tu dispositivo hasta un 50% en 30 minutos. Diseño compacto y plegable para portabilidad. Protecciones integradas contra sobrecarga, cortocircuitos y sobrecalentamiento. </p>
@@ -70,7 +72,7 @@
                     </div>
 
                     <div class="producto-card">
-                        <img src="imagenes/cargador_universal.jpg" alt="Cargador Universal para Notebook" width="300rem">
+                        <img src="assets/img/cargador_universal.jpg" alt="Cargador Universal para Notebook" width="300rem">
                         <div class="info">
                             <h5> Cargador Universal para Notebook </h5>
                             <p> Cargador GaN (Nitruro de Galio) compacto y potente con 3 puertos (USB-C PD + 2 USB-A). Compatible con marcas como HP, Dell, Lenovo, MacBook y ASUS. Tecnología inteligente que detecta el dispositivo para optimizar la corriente. </p>
@@ -79,7 +81,7 @@
                     </div>
 
                     <div class="producto-card">
-                        <img src="imagenes/teclado.png" alt="Teclado" width="300rem">
+                        <img src="assets/img/teclado.png" alt="Teclado" width="300rem">
                         <div class="info">
                             <h5> Teclado Universal </h5>
                             <p> Teclado ergonómico compatible con múltiples dispositivos (PC, Smart TV, tablets y smartphones) vía Bluetooth o receptor USB 2.4GHz. Diseño ultra delgado con teclas silenciosas y retroiluminación ajustable. Batería recargable de larga duración (hasta 40 horas). Incluye soporte integrado para celular y construcción resistente a salpicaduras. Perfecto para trabajo remoto o entretenimiento. </p>
@@ -91,75 +93,6 @@
                     <a href="#"> Ver mas...</a>
                 </div>
             </div>
-
-        </section>
-        <section id="reseñas">
-            <h2> Lo que opinan nuestros clientes </h2>
-            <div class="reseña-grid">
-                <div class="reseña-card">
-                    <p> Excelente calidad y precio </p>
-                    <div class="reseña-card-perfil"> 
-                        <iconify-icon icon="mdi:contact" width="70"></iconify-icon>
-                        <h4> David Carreño  </h4>
-                    </div>
-                </div>
-
-                <div class="reseña-card">
-                    <p> Precios accesibles, muy bueno :D </p>
-                    <div class="reseña-card-perfil"> 
-                        <iconify-icon icon="mdi:contact" width="70"></iconify-icon>
-                        <h4> Aylen Gonzalez </h4>
-                    </div>
-                </div>
-
-                <div class="reseña-card">
-                    <p> Volveré a comprar sin duda </p>
-                    <div class="reseña-card-perfil"> 
-                        <iconify-icon icon="mdi:contact" width="70"></iconify-icon>
-                        <h4> Fernando Delvalle </h4>
-                    </div>
-                </div>
-
-                <div class="reseña-card">
-                    <p> Me llegaron en muy buen estado, vale la pena </p>
-                    <div class="reseña-card-perfil"> 
-                        <iconify-icon icon="mdi:contact" width="70"></iconify-icon>
-                        <h4> Anais Mosquera </h4>
-                    </div>
-                </div>
-
-                <div class="reseña-card">
-                    <p> Todo perfecto, me gusta </p>
-                    <div class="reseña-card-perfil"> 
-                        <iconify-icon icon="mdi:contact" width="70"></iconify-icon>
-                        <h4> Ian Andujar </h4>
-                    </div>
-                </div>
-
-                <div class="reseña-card">
-                    <p> Excelente calidad, superó mis expectativas </p>
-                    <div class="reseña-card-perfil"> 
-                        <iconify-icon icon="mdi:contact" width="70"></iconify-icon>
-                        <h4> Santiango Montilla </h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto">
-            <h2> Contactanos</h2>
-            <h4> ¿Querés saber más sobre nuestros productos? ¿Necesitás ayuda con tu pedido? Escribinos y te responderemos lo antes posible.</h4>
-            <div class="formulario">
-                <form action="https://formspree.io/f/xgvkbjwd" method="post">
-                    <h2> Motivo de Consulta</h2>
-                        <input type="text" id = "nombre" name = "nombre" placeholder="Nombre" required> 
-                        <input type="text" id = "apellido" name = "apellido" placeholder="Apellido" required> 
-                        <input type="email" id="email" name = "email" placeholder="Correo electronico" required>
-                        <textarea name="motivo" id="motivo" maxlength="200" placeholder="Motivo" required></textarea>
-                        <button type="submit" > Enviar </button>
-            </div>
-                    </form>
-        </section>
 
     </main>
     <footer >
