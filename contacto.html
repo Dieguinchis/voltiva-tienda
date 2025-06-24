@@ -9,63 +9,115 @@
     <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-    <header class="header-pag">
+    <header>
         <nav>
             <div class="nav-bar"> 
                 <div class="nav-logo">
                     <a href="inicio.html ">Voltiva</a>
                 </div>
-                <div class="nav-links"> 
-                    <ul >
-                        <li><a href="productos.html"> Productos </a></li>
-                        <li><a href="reseñas.html"> Reseñas </a></li>
-                        <li><a href="nosotros.html"> Nosotros </a></li>
-                        <li><a href="faq.html"> Preguntas Frecuentes </a></li>
+                <button class="abrir-menu" id="abrir-menu"> <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>  </button>
+                <div class="nav-links" id="nav-links"> 
+                    <button class="cerrar-menu" id="cerrar-menu"> <iconify-icon icon="material-symbols:close-rounded"></iconify-icon>  </button> 
+                    <ul>
+                       <li><a href="inicio.html"class="link"> Inicio </a></li>
+                        <li><a href="productos.html"class="link"> Tienda </a></li>
+                        <li><a href="nosotros.html"class="link"> Nosotros </a></li>
+                        <li><a href="faq.html" class="link"> Preguntas Frecuentes </a></li>
+                        <li><a href="contacto.html" class="contacto"> Contacto </a></li>
                     </ul>
-                </div>
-                <div class="nav-contacto">
-                    <a href="contacto.html"> Contactanos </a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <section id="contacto">
-            <h2> Contactanos</h2>
-            <h4> ¿Querés saber más sobre nuestros productos? ¿Necesitás ayuda con tu pedido? Escribinos y te responderemos lo antes posible.</h4>
-            <div class="formulario">
-                <form action="https://formspree.io/f/xgvkbjwd" method="post">
-                    <h2> Motivo de Consulta</h2>
-                        <input type="text" id = "nombre" name = "nombre" placeholder="Nombre" required> 
-                        <input type="text" id = "apellido" name = "apellido" placeholder="Apellido" required> 
-                        <input type="email" id="email" name = "email" placeholder="Correo electronico" required>
-                        <textarea name="motivo" id="motivo" maxlength="200" placeholder="Motivo" required></textarea>
-                        <button type="submit" > Enviar </button>
-                </form>
+            <div class="contacto-header">
+                <h2>Contáctanos</h2>
+                <p> Si tienes alguna pregunta o necesitas más información <br class="br-responsive"> sobre nuestros productos, no dudes en contactarnos.</p>
+            </div>
+            <div class="contacto-main">
+                <div class="contacto-info">
+                    <h3>Contacta con Voltiva</h3>
+                    <p>Escríbenos para recibir asesoría personalizada sobre nuestros productos o tu pedido.</p>
+                    <ul class="contacto-lista">
+                        <li>
+                            <span class="icono"><iconify-icon icon="mdi:map-marker"></iconify-icon></span>
+                            <div>
+                                <span class="contacto-titulo">Dirección</span><br>
+                                <span class="contacto-dato">Buenos Aires, Argentina</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icono"><iconify-icon icon="mdi:phone"></iconify-icon></span>
+                            <div>
+                                <span class="contacto-titulo">Teléfono</span><br>
+                                <span class="contacto-dato">+54 11 1234-5678</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icono"><iconify-icon icon="mdi:email"></iconify-icon></span>
+                            <div>
+                                <span class="contacto-titulo">Email</span><br>
+                                <span class="contacto-dato">contacto@voltiva.com</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="contacto-social">
+                        <span class="contacto-social-label">Siguenos en:</span>
+                        <a href="#"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+                        <a href="#"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+                        <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                    </div>
+                </div>
+                <div class="contacto-formulario">
+                    <form>
+                        <h3>Envíanos un mensaje</h3>
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <textarea placeholder="Mensaje" required></textarea>
+                        <button class="enviar" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contacto-mapa">
+                <h3>Ubicación</h3>
+                <p>Estamos ubicados en el corazón de Buenos Aires, Argentina.</p>
+                <div class="mapa-embed">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1642.0917777967686!2d-58.39580709867889!3d-34.59951969149868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1749002974024!5m2!1ses!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
     </main>
-    <footer >
-    <div class="footer-top">
-        <a href="#"><iconify-icon icon="mdi:instagram" width="30"></iconify-icon></a>
-        <a href="#"><iconify-icon icon="mdi:facebook" width="30"></iconify-icon></a>
-        <a href="#"><iconify-icon icon="mdi:email" width="30"></iconify-icon></a>
-    </div>
-
-    <div class="footer-medio">
-        <div class="footer-contactos">
-            <p><iconify-icon icon="mdi:email-outline"></iconify-icon> colmenaresdiegod@gmail.com</p>
-            <p><iconify-icon icon="mdi:phone-outline"></iconify-icon> +54 9 351 123 4567</p>
+    <footer>
+        <div class="footer-social">
+            <a href="#"><iconify-icon icon="mdi:facebook"></iconify-icon><span>Facebook</span></a>
+            <a href="#"><iconify-icon icon="mdi:twitter"></iconify-icon><span>Twitter</span></a>
+            <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon><span>Instagram</span></a>
         </div>
-        <div class="footer-lugar">
-            <p><strong>Voltiva</strong> — Productos electrónicos de calidad.</p>
-            <p>Estamos en Córdoba, Argentina.</p>
-         </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2025 Voltiva. Todos los derechos reservados.</p>
-    </div>
+        <div class="footer-center">
+            <p class="footer-location">
+              Estamos en <strong>Buenos Aires, Argentina.</strong><br>
+              Trabajamos con clientes de todo el país. ¡Contactanos!
+            </p>
+            <div class="footer-contact">
+              <span class="footer-mail">
+                <iconify-icon icon="mdi:email"></iconify-icon>
+                <a href="mailto:contacto@voltiva.com">contacto@voltiva.com</a>
+              </span>
+              <span class="footer-phone">
+                <iconify-icon icon="mdi:phone"></iconify-icon>
+                <a href="tel:+541112345678">+54 11 1234-5678</a>
+              </span>
+              <span class="footer-address">
+                <iconify-icon icon="mdi:home"></iconify-icon>
+                Voltiva, Buenos Aires, Argentina
+              </span>
+            </div>
+          </div>
+        <div class="footer-bottom">
+            © 2025 Voltiva. Todos los derechos reservados.
+        </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

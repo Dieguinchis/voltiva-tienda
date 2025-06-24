@@ -9,57 +9,241 @@
     <link rel="stylesheet" href="css/inicio.css">
 </head>
 <body>
-    <header class="header-inicio">
+    <header>
         <nav>
             <div class="nav-bar"> 
                 <div class="nav-logo">
                     <a href="inicio.html ">Voltiva</a>
                 </div>
-                <div class="nav-links"> 
-                    <ul >
-                        <li><a href="productos.html"> Productos </a></li>
-                        <li><a href="reseñas.html"> Reseñas </a></li>
-                        <li><a href="nosotros.html"> Nosotros </a></li>
-                        <li><a href="faq.html"> Preguntas Frecuentes </a></li>
+                <button class="abrir-menu" id="abrir-menu"> <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>  </button>
+                <div class="nav-links" id="nav-links"> 
+                    <button class="cerrar-menu" id="cerrar-menu"> <iconify-icon icon="material-symbols:close-rounded"></iconify-icon>  </button> 
+                    <ul>
+                       <li><a href="inicio.html"class="link"> Inicio </a></li>
+                        <li><a href="productos.html"class="link"> Tienda </a></li>
+                        <li><a href="nosotros.html"class="link"> Nosotros </a></li>
+                        <li><a href="faq.html" class="link"> Preguntas Frecuentes </a></li>
+                        <li><a href="contacto.html" class="contacto"> Contacto </a></li>
                     </ul>
-                </div>
-                <div class="nav-contacto">
-                    <a href="contacto.html"> Contactanos </a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
+        <!--- Seccion de Inicio -->
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h2> Innovacion a tu alcance </h2>
                 <p>Descubrí lo último en tecnología con Voltiva</p>
                 <div class="hero-links"> 
-                    <a href="productos.html"> Ver productos </a>
-                    <a href="productos.html"> Promociones </a>
+                    <a href="productos.html"> Ver tienda </a>
+                    <a href="#destacados"> Ver destacados </a>
+                </div>
+            </div>
+          </section>
+        <!--- Seccion de Productos Destacados -->
+        <section id="destacados">
+            <div class="productos-destacados">
+                <h3>Productos Destacados</h3>
+
+                <div class="destacados-flex">
+                    <div class="destacados-item">
+                      <div class="destacados-imagen">
+                        <img src="assets/img/smartphone.png" alt="smartphone">
+                      </div>
+                        <h4>Smartphone Voltiva X1</h4>
+                        <p>El smartphone más avanzado del mercado.</p>
+                        <div class="destacados-footer">
+                          <span class="destacados-precio">$499.99</span>
+                          <a href="producto.html" class="destacados-boton">  Comprar </a>
+                        </div>
+                    </div>
+
+                    <div class="destacados-item">
+                      <div class="destacados-imagen">
+                        <img src="assets/img/tablet_pro.png" alt="Tablet Pro">
+                      </div>
+                      <h4>Voltiva Pro Tablet</h4>
+                      <p>Potencia y portabilidad en un solo dispositivo.</p>
+                        <div class="destacados-footer">
+                          <span class="destacados-precio">$899.99</span>
+                          <a href="producto.html" class="destacados-boton">  Comprar </a>
+                        </div>
+                    </div>
+                    
+                    <div class="destacados-item">
+                      <div class="destacados-imagen">
+                        <img src="assets/img/smartwatch.png" alt="Smartwatch">
+                      </div>
+                      <h4>Voltiva Smartwatch</h4>
+                      <p>Tu compañero ideal para un estilo de vida activo.</p>
+                        <div class="destacados-footer">
+                          <span class="destacados-precio">$399.99</span>
+                          <a href="producto.html" class="destacados-boton">  Comprar </a>
+                        </div>
+                    </div>
+
+                      <div class="destacados-item">
+                        <div class="destacados-imagen">
+                          <img src="assets/img/auriculares_logitech.png" alt="Auriculares Logitech">
+                        </div>
+                        <h4>Auriculares Logitech</h4>
+                        <p>Tu compañero ideal para un estilo de vida activo.</p>
+                        <div class="destacados-footer">
+                          <span class="destacados-precio">$699.99</span>
+                          <a href="producto.html" class="destacados-boton">  Comprar </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+        <!--- Seccion de Reseñas -->
+        <section id="reseñas">
+            <div class="reseñas-header">
+                <h2>Reseñas de clientes</h2>
+                <p>¡Descubre por qué Voltiva es la elección preferida!</p>
+                <div class="reseña-grid">
+                    <div class="reseña-card">
+                        <div class="reseña-stars">
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                        </div>
+                        <p>¡Excelente atención y productos originales! Recibí mi pedido en menos de 24hs y todo llegó perfecto. Recomiendo Voltiva sin dudarlo.</p>
+                        <div class="reseña-card-perfil">
+                            <iconify-icon icon="mdi:account-circle" width="50"></iconify-icon>
+                            <div>
+                                <h4>David Carreño</h4>
+                                <span>Cliente Voltiva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reseña-card">
+                        <div class="reseña-stars">
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star-outline" class="star"></iconify-icon>
+                        </div>
+                        <p>Muy buena experiencia, los precios son accesibles y el asesoramiento fue claro. Solo tardó un poco más el envío, pero volvería a comprar.</p>
+                        <div class="reseña-card-perfil">
+                            <iconify-icon icon="mdi:account-circle" width="50"></iconify-icon>
+                            <div>
+                                <h4>Aylen Gonzalez</h4>
+                                <span>Cliente Voltiva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reseña-card">
+                        <div class="reseña-stars">
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star-outline" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star-outline" class="star"></iconify-icon>
+                        </div>
+                        <p>Buena calidad y atención, aunque el producto no era exactamente lo que esperaba. Me ayudaron con el cambio sin problemas.</p>
+                        <div class="reseña-card-perfil">
+                            <iconify-icon icon="mdi:account-circle" width="50"></iconify-icon>
+                            <div>
+                                <h4>Fernando Delvalle</h4>
+                                <span>Cliente Voltiva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reseña-card">
+                        <div class="reseña-stars">
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star-outline" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star-outline" class="star"></iconify-icon>
+                        </div>
+                        <p>El producto llegó bien, pero la entrega fue más lenta de lo esperado. El soporte respondió mis dudas, pero podría mejorar la rapidez.</p>
+                        <div class="reseña-card-perfil">
+                            <iconify-icon icon="mdi:account-circle" width="50"></iconify-icon>
+                            <div>
+                                <h4>Anais Mosquera</h4>
+                                <span>Cliente Voltiva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reseña-card">
+                        <div class="reseña-stars">
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star-outline" class="star"></iconify-icon>
+                        </div>
+                        <p>Todo perfecto, el producto funciona muy bien y el empaque llegó en buen estado. Volvería a elegir Voltiva.</p>
+                        <div class="reseña-card-perfil">
+                            <iconify-icon icon="mdi:account-circle" width="50"></iconify-icon>
+                            <div>
+                                <h4>Ian Andujar</h4>
+                                <span>Cliente Voltiva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reseña-card">
+                        <div class="reseña-stars">
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                            <iconify-icon icon="mdi:star" class="star"></iconify-icon>
+                        </div>
+                        <p>Superó mis expectativas, la atención fue excelente y el producto llegó antes de lo previsto. ¡Gracias Voltiva!</p>
+                        <div class="reseña-card-perfil">
+                            <iconify-icon icon="mdi:account-circle" width="50"></iconify-icon>
+                            <div>
+                                <h4>Santiango Montilla</h4>
+                                <span>Cliente Voltiva</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer >
-        <div class="footer-top">
-            <a href="#"><iconify-icon icon="mdi:instagram" width="30"></iconify-icon></a>
-            <a href="#"><iconify-icon icon="mdi:facebook" width="30"></iconify-icon></a>
-            <a href="#"><iconify-icon icon="mdi:email" width="30"></iconify-icon></a>
+    <footer>
+        <div class="footer-social">
+            <a href="#"><iconify-icon icon="mdi:facebook"></iconify-icon><span>Facebook</span></a>
+            <a href="#"><iconify-icon icon="mdi:twitter"></iconify-icon><span>Twitter</span></a>
+            <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon><span>Instagram</span></a>
         </div>
-        <div class="footer-medio">
-            <div class="footer-contactos">
-                <p><iconify-icon icon="mdi:email-outline"></iconify-icon> colmenaresdiegod@gmail.com</p>
-                <p><iconify-icon icon="mdi:phone-outline"></iconify-icon> +54 9 351 123 4567</p>
+        <div class="footer-center">
+            <p class="footer-location">
+              Estamos en <strong>Buenos Aires, Argentina.</strong><br>
+              Trabajamos con clientes de todo el país. ¡Contactanos!
+            </p>
+            <div class="footer-contact">
+              <span class="footer-mail">
+                <iconify-icon icon="mdi:email"></iconify-icon>
+                <a href="mailto:contacto@voltiva.com">contacto@voltiva.com</a>
+              </span>
+              <span class="footer-phone">
+                <iconify-icon icon="mdi:phone"></iconify-icon>
+                <a href="tel:+541112345678">+54 11 1234-5678</a>
+              </span>
+              <span class="footer-address">
+                <iconify-icon icon="mdi:home"></iconify-icon>
+                Voltiva, Buenos Aires, Argentina
+              </span>
             </div>
-            <div class="footer-lugar">
-                <p><strong>Voltiva</strong> — Productos electrónicos de calidad.</p>
-                <p>Estamos en Córdoba, Argentina.</p>
-            </div>
-        </div>
+          </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Voltiva. Todos los derechos reservados.</p>
+            © 2025 Voltiva. Todos los derechos reservados.
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,121 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voltiva</title>
-    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/productos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voltiva</title>
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/productos.css">
 </head>
 <body>
-    <header class="header-pag">
+    <header>
         <nav>
             <div class="nav-bar"> 
                 <div class="nav-logo">
                     <a href="inicio.html ">Voltiva</a>
                 </div>
-                <div class="nav-links"> 
-                    <ul >
-                        <li><a href="productos.html"> Productos </a></li>
-                        <li><a href="reseñas.html"> Reseñas </a></li>
-                        <li><a href="nosotros.html"> Nosotros </a></li>
-                        <li><a href="faq.html"> Preguntas Frecuentes </a></li>
+                <button class="abrir-menu" id="abrir-menu"> <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>  </button>
+                <div class="nav-links" id="nav-links"> 
+                    <button class="cerrar-menu" id="cerrar-menu"> <iconify-icon icon="material-symbols:close-rounded"></iconify-icon>  </button> 
+                    <ul>
+                       <li><a href="inicio.html"class="link"> Inicio </a></li>
+                        <li><a href="productos.html"class="link"> Tienda </a></li>
+                        <li><a href="nosotros.html"class="link"> Nosotros </a></li>
+                        <li><a href="faq.html" class="link"> Preguntas Frecuentes </a></li>
+                        <li><a href="contacto.html" class="contacto"> Contacto </a></li>
                     </ul>
-                </div>
-                <div class="nav-contacto">
-                    <a href="contacto.html"> Contactanos </a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <section id="productos">
+          <div class="hero-content">
             <h2> Nuestros Productos </h2>
-            <div class="producto">
-                <h4> Catalogo</h4>
-                <div class="producto-flex">
-                    <div class="producto-card">
-                        <img src="assets/img/audifonos_inalambricos.jpg" alt="Audifonos Inalambricos" width="300rem">
-                        <div class="info">
-                            <h5> Audifonos Inalambricos </h5>
-                            <p> Audífonos intraurales con cancelación de ruido ambiental y sonido HD Bass. Batería de 30 horas (con estuche de carga). Resistencia IPX5 contra agua y sudor. Micrófono incorporado con reducción de ruido para llamadas claras. Controles táctiles y modo "transparencia" para escuchar tu entorno. </p>
-                        </div>
-                        <a href="#"> Comprar </a>
-                    </div>
-
-                    <div class="producto-card">
-                        <img src="assets/img/notebook.jpg" alt="Notebook" width="300rem">
-                        <div class="info">
-                            <h5> Notebook </h5>
-                            <p> Notebook ultradelgada (solo 1.2 kg y 13.3 mm de grosor) con chasis de aluminio resistente y bisel reducido para máxima portabilidad. Ideal para trabajo, estudio o entretenimiento. </p>
-                        </div>
-                        <a href="#"> Comprar </a>
-                    </div>
-
-                    <div class="producto-card">
-                        <img src="assets/img/funda_celular.png" alt="Funda para celular" width="300rem">
-                        <div class="info">
-                            <h5> Funda transparente para celular </h5>
-                            <p> Funda de TPU ultra transparente y anti-yellowing (resistente al amarillamiento) para mostrar el diseño original de tu smartphone. Protección 360° con bordes elevados para resguardar la pantalla y cámara. Material flexible antichoque y textura antideslizante. </p>
-                        </div>
-                        <a href="#"> Comprar </a>
-                    </div>
-
-                    <div class="producto-card">
-                        <img src="assets/img/cargador_celular.jpg" alt="Cargador para celular" width="300rem">
-                        <div class="info">
-                            <h5> Cargador para celular </h5>
-                            <p> Cargador USB-C PD 3.0 con tecnología de carga rápida inteligente. Recarga tu dispositivo hasta un 50% en 30 minutos. Diseño compacto y plegable para portabilidad. Protecciones integradas contra sobrecarga, cortocircuitos y sobrecalentamiento. </p>
-                        </div>
-                        <a href="#"> Comprar </a>
-                    </div>
-
-                    <div class="producto-card">
-                        <img src="assets/img/cargador_universal.jpg" alt="Cargador Universal para Notebook" width="300rem">
-                        <div class="info">
-                            <h5> Cargador Universal para Notebook </h5>
-                            <p> Cargador GaN (Nitruro de Galio) compacto y potente con 3 puertos (USB-C PD + 2 USB-A). Compatible con marcas como HP, Dell, Lenovo, MacBook y ASUS. Tecnología inteligente que detecta el dispositivo para optimizar la corriente. </p>
-                        </div>
-                        <a href="#"> Comprar </a>
-                    </div>
-
-                    <div class="producto-card">
-                        <img src="assets/img/teclado.png" alt="Teclado" width="300rem">
-                        <div class="info">
-                            <h5> Teclado Universal </h5>
-                            <p> Teclado ergonómico compatible con múltiples dispositivos (PC, Smart TV, tablets y smartphones) vía Bluetooth o receptor USB 2.4GHz. Diseño ultra delgado con teclas silenciosas y retroiluminación ajustable. Batería recargable de larga duración (hasta 40 horas). Incluye soporte integrado para celular y construcción resistente a salpicaduras. Perfecto para trabajo remoto o entretenimiento. </p>
-                        </div>
-                        <a href="#"> Comprar </a>
-                    </div>
-                </div>
-                <div class="producto-ver-mas">
-                    <a href="#"> Ver mas...</a>
+            <p>Explora nuestra amplia gama de productos tecnológicos, desde celulares hasta accesorios innovadores.</p>
+                <div class="hero-links"> 
+                    <a href="productos.html"> Ver celulares </a>
+                    <a href="#destacados"> Ver destacados </a>
                 </div>
             </div>
+        </section>
+        <section id="catalogo">
+            <div class="productos-catalogo">
+                <div class="filtros">
+                    <h3>Opciones de filtro</h3>
+                    <div class="categoria-filtro">
+                        <h4>Por categoría:</h4>
+                        <div class="categoria-opcion">
+                            <input type="checkbox" id="celulares" name="categoria" value="celulares">
+                            <label for="celulares">Celulares</label>
+                        </div>
+                        <div class="categoria-opcion">
+                            <input type="checkbox" id="computadoras" name="categoria" value="computadoras">
+                            <label for="computadoras">Computadoras</label>
+                        </div>
+                        <div class="categoria-opcion">
+                            <input type="checkbox" id="tablets" name="categoria" value="tablets">
+                            <label for="tablets">Tablets</label>
+                        </div>
+                    </div>
+                    <div class="precio-filtro">
+                        <h4>Rango de precios:</h4>
+                        <div class="precio-opcion">
+                            <input type="checkbox" id="precio1" name="precio" value="0-10000">
+                            <label for="precio1">$0 - $10.000</label>
+                        </div>
+                        <div class="precio-opcion">
+                            <input type="checkbox" id="precio2" name="precio" value="10000-100000">
+                            <label for="precio2">$10.000 - $100.000</label>
+                        </div>
+                        <div class="precio-opcion">
+                            <input type="checkbox" id="precio3" name="precio" value="100000-mas">
+                            <label for="precio3">$100.000 - Más</label>
+                        </div>
+                    </div>
+                </div>
+              <div class="productos-container">
+                <h2>Catálogo</h2>
+                <div class="productos-grid">
 
-    </main>
-    <footer >
-    <div class="footer-top">
-        <a href="#"><iconify-icon icon="mdi:instagram" width="30"></iconify-icon></a>
-        <a href="#"><iconify-icon icon="mdi:facebook" width="30"></iconify-icon></a>
-        <a href="#"><iconify-icon icon="mdi:email" width="30"></iconify-icon></a>
-    </div>
-
-    <div class="footer-medio">
-        <div class="footer-contactos">
-            <p><iconify-icon icon="mdi:email-outline"></iconify-icon> colmenaresdiegod@gmail.com</p>
-            <p><iconify-icon icon="mdi:phone-outline"></iconify-icon> +54 9 351 123 4567</p>
+                  <div class="destacados-item">
+                    <div class="destacados-imagen">
+                      <img src="assets/img/audifonos_inalambricos.png" alt="Audífonos Pro">
+                    </div>
+                    <h4>Audífonos Pro</h4>
+                    <p>Sonido HD, cancelación de ruido y batería de 30h. Resistentes al agua y con controles táctiles.</p>
+                    <div class="destacados-footer">
+                      <span class="destacados-precio">$1350</span>
+                      <a href="producto.html" class="destacados-boton">Añadir al carrito</a>
+                    </div>
+                  </div>
+          
+                  <div class="destacados-item">
+                    <div class="destacados-imagen">
+                      <img src="assets/img/notebook.png" alt="Notebook Slim">
+                    </div>
+                    <h4>Notebook Slim</h4>
+                    <p>Ultraliviana y resistente, ideal para trabajo, estudio o entretenimiento. Portabilidad máxima.</p>
+                    <div class="destacados-footer">
+                      <span class="destacados-precio">$5350</span>
+                      <a href="producto.html" class="destacados-boton"> Añadir al carrito</a>
+                    </div>
+                  </div>
+          
+                  <div class="destacados-item">
+                    <div class="destacados-imagen">
+                      <img src="assets/img/funda_celular.png" alt="Funda TPU">
+                    </div>
+                    <h4>Funda TPU</h4>
+                    <p>Funda TPU anti-amarillamiento, flexible y antichoque. Protección total y diseño original visible.</p>
+                    <div class="destacados-footer">
+                      <span class="destacados-precio">$1350</span>
+                      <a href="producto.html" class="destacados-boton"> Añadir al carrito</a>
+                    </div>
+                  </div>
+          
+                  <div class="destacados-item">
+                    <div class="destacados-imagen">
+                      <img src="assets/img/cargador_celular.png" alt="Cargador Rápido">
+                    </div>
+                    <h4>Cargador Rápido</h4>
+                    <p>Carga rápida USB-C PD. Compacto, seguro y portátil. Protege contra sobrecargas y sobrecalentamiento.</p>
+                    <div class="destacados-footer">
+                      <span class="destacados-precio">$1350</span>
+                      <a href="producto.html" class="destacados-boton"> Añadir al carrito </a>
+                    </div>
+                  </div>
+          
+                  <div class="destacados-item">
+                    <div class="destacados-imagen">
+                      <img src="assets/img/cargador_universal.png" alt="Cargador Universal">
+                    </div>
+                    <h4>Cargador Universal</h4>
+                    <p>Cargador GaN compacto con 3 puertos. Compatible con HP, Dell, Lenovo, MacBook y más.</p>
+                    <div class="destacados-footer">
+                      <span class="destacados-precio">$1350</span>
+                      <a href="producto.html" class="destacados-boton">Añadir al carrito</a>
+                    </div>
+                  </div>
+          
+                  <div class="destacados-item">
+                    <div class="destacados-imagen">
+                      <img src="assets/img/teclado.png" alt="Teclado Multiuso">
+                    </div>
+                    <h4>Teclado Multiuso</h4>
+                    <p>Bluetooth y USB. Delgado, silencioso y retroiluminado. Batería recargable y soporte para celular.</p>
+                    <div class="destacados-footer">
+                      <span class="destacados-precio">$1350</span>
+                      <a href="producto.html" class="destacados-boton"> Añadir al carrito</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+  </main>
+  <footer>
+        <div class="footer-social">
+            <a href="#"><iconify-icon icon="mdi:facebook"></iconify-icon><span>Facebook</span></a>
+            <a href="#"><iconify-icon icon="mdi:twitter"></iconify-icon><span>Twitter</span></a>
+            <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon><span>Instagram</span></a>
         </div>
-        <div class="footer-lugar">
-            <p><strong>Voltiva</strong> — Productos electrónicos de calidad.</p>
-            <p>Estamos en Córdoba, Argentina.</p>
-         </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2025 Voltiva. Todos los derechos reservados.</p>
-    </div>
+        <div class="footer-center">
+            <p class="footer-location">
+              Estamos en <strong>Buenos Aires, Argentina.</strong><br>
+              Trabajamos con clientes de todo el país. ¡Contactanos!
+            </p>
+            <div class="footer-contact">
+              <span class="footer-mail">
+                <iconify-icon icon="mdi:email"></iconify-icon>
+                <a href="mailto:contacto@voltiva.com">contacto@voltiva.com</a>
+              </span>
+              <span class="footer-phone">
+                <iconify-icon icon="mdi:phone"></iconify-icon>
+                <a href="tel:+541112345678">+54 11 1234-5678</a>
+              </span>
+              <span class="footer-address">
+                <iconify-icon icon="mdi:home"></iconify-icon>
+                Voltiva, Buenos Aires, Argentina
+              </span>
+            </div>
+          </div>
+        <div class="footer-bottom">
+            © 2025 Voltiva. Todos los derechos reservados.
+        </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

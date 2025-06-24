@@ -9,63 +9,128 @@
     <link rel="stylesheet" href="css/nosotros.css">
 </head>
 <body>
-    <header class="header-pag">
+    <header>
         <nav>
             <div class="nav-bar"> 
                 <div class="nav-logo">
                     <a href="inicio.html ">Voltiva</a>
                 </div>
-                <div class="nav-links"> 
-                    <ul >
-                        <li><a href="productos.html"> Productos </a></li>
-                        <li><a href="reseñas.html"> Reseñas </a></li>
-                        <li><a href="nosotros.html"> Nosotros </a></li>
-                        <li><a href="faq.html"> Preguntas Frecuentes </a></li>
+                <button class="abrir-menu" id="abrir-menu"> <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>  </button>
+                <div class="nav-links" id="nav-links"> 
+                    <button class="cerrar-menu" id="cerrar-menu"> <iconify-icon icon="material-symbols:close-rounded"></iconify-icon>  </button> 
+                    <ul>
+                       <li><a href="inicio.html"class="link"> Inicio </a></li>
+                        <li><a href="productos.html"class="link"> Tienda </a></li>
+                        <li><a href="nosotros.html"class="link"> Nosotros </a></li>
+                        <li><a href="faq.html" class="link"> Preguntas Frecuentes </a></li>
+                        <li><a href="contacto.html" class="contacto"> Contacto </a></li>
                     </ul>
-                </div>
-                <div class="nav-contacto">
-                    <a href="contacto.html"> Contactanos </a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <section id="nosotros">
-        <h2> Sobre Nosotros </h2>
-        <p> En Voltiva somos apasionados por la tecnología. Creamos esta tienda con el objetivo de ofrecer productos innovadores, confiables y accesibles para todos los amantes del mundo digital. </p>
-        <p> Nuestra misión es mejorar la vida digital de nuestros clientes, ofreciéndoles productos de calidad, atención personalizada y una navegación cómoda para que comprar online sea una experiencia positiva. </p>
-        <ul>
-            <li> Atención al cliente cercana </li>
-            <li> Tecnología accesible </li>
-            <li> Seguridad en cada compra </li>
-        </ul>
-        <!-- Imagen opcional -->
-        <!-- <img src="img/nosotros.jpg" alt="Equipo Voltiva"> -->
-        <p> Detrás de Voltiva hay un equipo joven con formación en desarrollo web y un profundo interés por las últimas tendencias en tecnología. </p>
+            <div class="nosotros-hero-alt">
+                <div class="nosotros-hero-content">
+                <h1>Sobre Voltiva</h1>
+                <p>Conectamos tecnología y personas para transformar tu experiencia digital.</p>
+                </div>
+            </div>
+
+            <div class="nosotros-block nosotros-block--light">
+                <div class="nosotros-block-content">
+                <div class="nosotros-block-text">
+                    <span class="nosotros-label">Nuestra Propuesta</span>
+                    <h2>Impulsamos tu vida digital con soluciones confiables</h2>
+                    <p>
+                    En Voltiva, nos dedicamos a acercar la mejor tecnología a cada persona y empresa. Nuestro equipo te acompaña en cada paso, desde la elección hasta el soporte postventa, para que tu experiencia sea simple, segura y satisfactoria.
+                    </p>
+                    <a href="contacto.html" class="nosotros-btn">Ver nuestros servicios</a>
+                </div>
+                <div class="nosotros-block-img">
+                    <img src="assets/img/equipo_voltiva.png" alt="Equipo Voltiva reunido">
+                </div>
+                </div>
+            </div>
+
+            <div class="nosotros-block nosotros-block--values">
+                <span class="nosotros-label">Nuestros Valores</span>
+                <h2>Lo que nos mueve en Voltiva</h2>
+                <div class="nosotros-values-list">
+                    <div class="nosotros-value">
+                        <iconify-icon icon="mdi:account-group"></iconify-icon>
+                        <h3>Cercanía</h3>
+                        <p>Escuchamos y acompañamos a cada cliente en su experiencia digital.</p>
+                    </div>
+                    <div class="nosotros-value">
+                        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+                        <h3>Innovación</h3>
+                        <p>Siempre actualizados para ofrecerte lo último en tecnología y tendencias.</p>
+                    </div>
+                    <div class="nosotros-value">
+                        <iconify-icon icon="mdi:shield-check"></iconify-icon>
+                        <h3>Confianza</h3>
+                        <p>Productos originales y marcas reconocidas, con garantía y respaldo.</p>
+                    </div>
+                    <div class="nosotros-value">
+                        <iconify-icon icon="mdi:star-circle"></iconify-icon>
+                        <h3>Compromiso</h3>
+                        <p>Nos esforzamos para superar tus expectativas y construir relaciones duraderas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nosotros-block nosotros-block--alt">
+                <div class="nosotros-block-content">
+                    <div class="nosotros-block-img">
+                        <img src="assets/img/atencion-cliente.jpg" alt="Atención personalizada Voltiva">
+                    </div>
+                    <div class="nosotros-block-text">
+                        <span class="nosotros-label">¿Por qué elegirnos?</span>
+                        <h2>Experiencia, agilidad y atención personalizada</h2>
+                        <ul class="nosotros-list">
+                            <li>+1.000 clientes satisfechos</li>
+                            <li>99% de pedidos entregados a tiempo</li>
+                            <li>Despacho en menos de 24hs</li>
+                            <li>Soporte antes y después de tu compra</li>
+                        </ul>
+                        <a href="faq.html" class="nosotros-btn">Preguntas frecuentes</a>
+                    </div>
+                </div>
+            </div>
         </section>
-
     </main>
-    <footer >
-    <div class="footer-top">
-        <a href="#"><iconify-icon icon="mdi:instagram" width="30"></iconify-icon></a>
-        <a href="#"><iconify-icon icon="mdi:facebook" width="30"></iconify-icon></a>
-        <a href="#"><iconify-icon icon="mdi:email" width="30"></iconify-icon></a>
-    </div>
-
-    <div class="footer-medio">
-        <div class="footer-contactos">
-            <p><iconify-icon icon="mdi:email-outline"></iconify-icon> colmenaresdiegod@gmail.com</p>
-            <p><iconify-icon icon="mdi:phone-outline"></iconify-icon> +54 9 351 123 4567</p>
+    <footer>
+        <div class="footer-social">
+            <a href="#"><iconify-icon icon="mdi:facebook"></iconify-icon><span>Facebook</span></a>
+            <a href="#"><iconify-icon icon="mdi:twitter"></iconify-icon><span>Twitter</span></a>
+            <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon><span>Instagram</span></a>
         </div>
-        <div class="footer-lugar">
-            <p><strong>Voltiva</strong> — Productos electrónicos de calidad.</p>
-            <p>Estamos en Córdoba, Argentina.</p>
-         </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2025 Voltiva. Todos los derechos reservados.</p>
-    </div>
+        <div class="footer-center">
+            <p class="footer-location">
+              Estamos en <strong>Buenos Aires, Argentina.</strong><br>
+              Trabajamos con clientes de todo el país. ¡Contactanos!
+            </p>
+            <div class="footer-contact">
+              <span class="footer-mail">
+                <iconify-icon icon="mdi:email"></iconify-icon>
+                <a href="mailto:contacto@voltiva.com">contacto@voltiva.com</a>
+              </span>
+              <span class="footer-phone">
+                <iconify-icon icon="mdi:phone"></iconify-icon>
+                <a href="tel:+541112345678">+54 11 1234-5678</a>
+              </span>
+              <span class="footer-address">
+                <iconify-icon icon="mdi:home"></iconify-icon>
+                Voltiva, Buenos Aires, Argentina
+              </span>
+            </div>
+          </div>
+        <div class="footer-bottom">
+            © 2025 Voltiva. Todos los derechos reservados.
+        </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
