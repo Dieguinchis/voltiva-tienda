@@ -46,12 +46,14 @@ main{
 .nav-links {
   justify-content: center;
   display: flex;
-  padding-right: 3.5rem;
+  padding-right: 3.2rem;
 }
 .nav-links ul{
   display: flex;
+  align-items: center; /* Alinea verticalmente todos los hijos */
   gap: 1.5rem;
   padding: 0;
+  margin: 0;
 }
 .nav-links li {
   list-style: none;
@@ -85,6 +87,29 @@ main{
 }
 .abrir-menu, .cerrar-menu {
   display: none;
+}
+/*---------------------------------------------- carrito de compras  ---------------------------------------------------*/
+#carrito-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#carrito-btn:hover {
+  transform: scale(1.1);
+}
+#carrito-btn iconify-icon {
+  color: var(--color-primario);
+  font-size: 2.2rem;
+}
+#carrito-btn span {
+  position: absolute;
+  background-color: var(--color-primario);
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 /*---------------------------------------------- footer ---------------------------------------------------*/
 
@@ -295,6 +320,10 @@ footer {
   .contacto{
     border: none;
   }
+  #carrito-btn iconify-icon {
+  color: #ffffff;
+  font-size: 2.2rem;
+}
 }
 
 @media (max-width: 700px) {

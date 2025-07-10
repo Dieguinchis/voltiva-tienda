@@ -1,48 +1,90 @@
 # 🛒 Tienda Online Voltiva
 
-**Voltiva** es una tienda online ficticia desarrollada como parte de un proyecto web. Este sitio fue diseñado utilizando **HTML5** y **CSS3**, implementando buenas prácticas de semántica, diseño responsive y organización de archivos. Su propósito es ofrecer una experiencia de usuario limpia y profesional para visualizar productos tecnológicos como audífonos, notebooks, fundas para celular, entre otros.
+**Voltiva** es una tienda online ficticia desarrollada como proyecto académico. El sitio está construido con **HTML5**, **CSS3** y **JavaScript**, siguiendo buenas prácticas de semántica, accesibilidad, diseño responsive y organización de archivos. Permite visualizar y comprar productos tecnológicos como notebooks, celulares, tablets y accesorios.
+
+---
 
 ## 📁 Estructura del proyecto
 
 ```
 TIENDA-ONLINE-VOLTIVA/
 │
-└── html y css/
-    ├── imagenes/
-    │   ├── audifonos_inalambricos.jpg
-    │   ├── cargador_celular.jpg
-    │   ├── cargador_universal.jpg
-    │   ├── funda_celular.png
-    │   ├── notebook.jpg
-    │   ├── seccion_inicio.jpg
-    │   └── teclado.png
-    │
-    ├── index.html
-    └── style.css
+├── assets/
+│   └── img/
+│       ├── audifonos_inalambricos.png
+│       ├── auriculares_logitech.png
+│       ├── banner_inicio.png
+│       ├── banner_tienda.png
+│       ├── notebook_lenovo.png
+│       └── ...otros productos
+│
+├── css/
+│   ├── style.css
+│   ├── productos.css
+│   ├── inicio.css
+│   ├── contacto.css
+│   ├── faq.css
+│   └── nosotros.css
+│
+├── js/
+│   └── script.js
+│
+├── inicio.html
+├── productos.html
+├── contacto.html
+├── faq.html
+└── nosotros.html
 ```
+
+---
 
 ## 🌐 Tecnologías utilizadas
 
-- **HTML5**: Para la estructura semántica del sitio.
-- **CSS3**: Para el diseño visual, uso de Flexbox y Grid.
-- **Formspree**: Para el envío del formulario de contacto (si se implementa).
-- **Visual Studio Code**: Como entorno de desarrollo principal.
+- **HTML5**: Estructura semántica y SEO.
+- **CSS3**: Diseño visual, Flexbox y Grid, responsive.
+- **JavaScript**: Interactividad, consumo de API, carrito, validación de formularios.
+- **Formspree**: Envío de formulario de contacto.
+- **Iconify**: Iconos modernos para UI.
+- **Visual Studio Code**: Entorno de desarrollo.
 
-## 🎯 Funcionalidades destacadas
+---
 
-- Diseño adaptable a diferentes tamaños de pantalla.
-- Secciones informativas organizadas visualmente.
-- Imágenes optimizadas de productos.
-- Navegación intuitiva entre secciones.
-- Estética profesional con paleta de colores oscuros (negro, blanco y morado).
+## 🎯 Funcionalidades principales
+
+- **Catálogo dinámico:**  
+  Los productos se obtienen desde una API REST pública ([FakeStoreAPI](https://fakestoreapi.com/products/category/electronics)) y se muestran como tarjetas con imagen, nombre, descripción y precio.
+
+- **Carrito de compras dinámico:**  
+  Añade productos al carrito, edita cantidades, elimina productos y visualiza el total. El carrito se guarda en `localStorage` para persistencia.
+
+- **Contador de carrito:**  
+  El número de productos en el carrito se actualiza en tiempo real y es visible en el header.
+
+- **Validación de formularios:**  
+  El formulario de contacto valida campos requeridos y formato de correo electrónico usando JavaScript y muestra mensajes al usuario.
+
+- **SEO y Accesibilidad:**  
+  Uso de metaetiquetas, imágenes con `alt`, navegación con teclado y estructura semántica.
+
+- **Diseño responsivo:**  
+  El sitio se adapta a diferentes tamaños de pantalla (desktop, tablet, móvil).
+
+- **Mensajes dinámicos:**  
+  Notificaciones flotantes para acciones del usuario (añadir al carrito, errores de formulario, etc).
+
+---
 
 ## 📌 Estado del proyecto
 
-✅ Proyecto funcional para presentación académica.  
-🔧 Tendrá una expansión futura para mejorar el diseño e incluir funcionalidad con JavaScript.
+✅ Proyecto funcional y completo para presentación académica.  
+🔄 Listo para futuras mejoras y expansión (más filtros, integración con APIs propias, etc).
+
+---
 
 ## 📄 Licencia
 
-Este proyecto fue desarrollado con fines educativos. 
--------------------------------------------------------------------------------
+Este proyecto fue desarrollado con fines educativos.
+
+---
+
 © 2025 Diego David Colmenares Carreño - Voltiva

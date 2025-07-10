@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voltiva</title>
+  <title>Tienda Voltiva - Productos tecnológicos</title>
+  <meta name="description" content="Explorá todos los productos de Voltiva: notebooks, smartphones, auriculares, teclados, y más. Comprá fácil y seguro.">
   <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/productos.css">
@@ -24,6 +25,10 @@
                         <li><a href="nosotros.html"class="link"> Nosotros </a></li>
                         <li><a href="faq.html" class="link"> Preguntas Frecuentes </a></li>
                         <li><a href="contacto.html" class="contacto"> Contacto </a></li>
+                        <button id="carrito-btn" aria-label="Ver carrito">
+                            <iconify-icon icon="mdi:cart-outline"></iconify-icon>
+                            <span id="carrito-contador">0</span>
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -77,80 +82,7 @@
                 </div>
               <div class="productos-container">
                 <h2>Catálogo</h2>
-                <div class="productos-grid">
-
-                  <div class="destacados-item">
-                    <div class="destacados-imagen">
-                      <img src="assets/img/audifonos_inalambricos.png" alt="Audífonos Pro">
-                    </div>
-                    <h4>Audífonos Pro</h4>
-                    <p>Sonido HD, cancelación de ruido y batería de 30h. Resistentes al agua y con controles táctiles.</p>
-                    <div class="destacados-footer">
-                      <span class="destacados-precio">$1350</span>
-                      <a href="producto.html" class="destacados-boton">Añadir al carrito</a>
-                    </div>
-                  </div>
-          
-                  <div class="destacados-item">
-                    <div class="destacados-imagen">
-                      <img src="assets/img/notebook.png" alt="Notebook Slim">
-                    </div>
-                    <h4>Notebook Slim</h4>
-                    <p>Ultraliviana y resistente, ideal para trabajo, estudio o entretenimiento. Portabilidad máxima.</p>
-                    <div class="destacados-footer">
-                      <span class="destacados-precio">$5350</span>
-                      <a href="producto.html" class="destacados-boton"> Añadir al carrito</a>
-                    </div>
-                  </div>
-          
-                  <div class="destacados-item">
-                    <div class="destacados-imagen">
-                      <img src="assets/img/funda_celular.png" alt="Funda TPU">
-                    </div>
-                    <h4>Funda TPU</h4>
-                    <p>Funda TPU anti-amarillamiento, flexible y antichoque. Protección total y diseño original visible.</p>
-                    <div class="destacados-footer">
-                      <span class="destacados-precio">$1350</span>
-                      <a href="producto.html" class="destacados-boton"> Añadir al carrito</a>
-                    </div>
-                  </div>
-          
-                  <div class="destacados-item">
-                    <div class="destacados-imagen">
-                      <img src="assets/img/cargador_celular.png" alt="Cargador Rápido">
-                    </div>
-                    <h4>Cargador Rápido</h4>
-                    <p>Carga rápida USB-C PD. Compacto, seguro y portátil. Protege contra sobrecargas y sobrecalentamiento.</p>
-                    <div class="destacados-footer">
-                      <span class="destacados-precio">$1350</span>
-                      <a href="producto.html" class="destacados-boton"> Añadir al carrito </a>
-                    </div>
-                  </div>
-          
-                  <div class="destacados-item">
-                    <div class="destacados-imagen">
-                      <img src="assets/img/cargador_universal.png" alt="Cargador Universal">
-                    </div>
-                    <h4>Cargador Universal</h4>
-                    <p>Cargador GaN compacto con 3 puertos. Compatible con HP, Dell, Lenovo, MacBook y más.</p>
-                    <div class="destacados-footer">
-                      <span class="destacados-precio">$1350</span>
-                      <a href="producto.html" class="destacados-boton">Añadir al carrito</a>
-                    </div>
-                  </div>
-          
-                  <div class="destacados-item">
-                    <div class="destacados-imagen">
-                      <img src="assets/img/teclado.png" alt="Teclado Multiuso">
-                    </div>
-                    <h4>Teclado Multiuso</h4>
-                    <p>Bluetooth y USB. Delgado, silencioso y retroiluminado. Batería recargable y soporte para celular.</p>
-                    <div class="destacados-footer">
-                      <span class="destacados-precio">$1350</span>
-                      <a href="producto.html" class="destacados-boton"> Añadir al carrito</a>
-                    </div>
-                  </div>
-                </div>
+                <div class="productos-grid"></div>
               </div>
             </section>
   </main>
@@ -184,6 +116,6 @@
             © 2025 Voltiva. Todos los derechos reservados.
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
